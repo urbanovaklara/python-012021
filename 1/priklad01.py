@@ -3,8 +3,7 @@ baliky = {
     "B547X": False,
     "B251X": False,
     "B501X": True,
-    "B947X": False,
-}
+    "B947X": False,}
 
 cislo_baliku=input("Zadej číslo balíku")
 
