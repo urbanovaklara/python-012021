@@ -50,7 +50,7 @@ morse = ""
 slovo=input("Napiš text, jež chceš přepsat do Morseovy abecedy:")
 for p in slovo:
     if p == " ":
-        morse += morseCode["/"]
+        morse += "/"
     else: morse += morseCode[p]
 
 

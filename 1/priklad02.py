@@ -11,9 +11,9 @@ pozadovane_mnozstvi = int(input("Jaké je požadované množství součástky?")
 
 if not kod_soucastky in sklad:
     print("Není skladem")
-elif pozadovane_mnozstvi < sklad[kod_soucastky]:
-    print("Poptávku lze uspokojit v plné výši")
-    sklad[kod_soucastky] = sklad[kod_soucastky] - pozadovane_mnozstvi
 elif pozadovane_mnozstvi > sklad[kod_soucastky]:
     print("Poptávku lze uspokojit pouze částečně")
     sklad.pop(kod_soucastky)
+else:
+    print("Poptávku lze uspokojit v plné výši")
+    sklad[kod_soucastky] = sklad[kod_soucastky] - pozadovane_mnozstvi

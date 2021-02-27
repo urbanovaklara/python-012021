@@ -16,6 +16,7 @@ total_sales=0
 sales = input("Název knihy:")
 if sales in prodeje2019:
         total_sales += prodeje2019[sales]
-else: total_sales=0
+else:
+    total_sales=0
 
 print(total_sales+prodeje2020[sales])
