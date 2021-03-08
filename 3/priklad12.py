@@ -24,7 +24,7 @@ if auto=="Peugeot":
     print(auto1.pujc_auto())
 elif auto=="Škoda":
     print(auto2.get_info())
-    auto2.pujc_auto()
+    print(auto2.pujc_auto())
 
 auto_zkouska=input("Jaké vozidlo si chcete půjčit?")
 if auto=="Peugeot":
@@ -32,6 +32,6 @@ if auto=="Peugeot":
     print(auto1.pujc_auto())
 elif auto=="Škoda":
     print(auto2.get_info())
-    auto2.pujc_auto()
+    print(auto2.pujc_auto())
 
 
