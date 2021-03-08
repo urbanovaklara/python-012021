@@ -7,7 +7,8 @@ vysledky = [
 ]
 prumerZnamek=0
 for item in vysledky:
-  prumerZnamek=item[1]+item[2]+item[3]+item[4]+item[5]
-print(item["Jméno"],prumerZnamek)
+  for key, value in item.items():
+    prumerZnamek=item["Český jazyk"]+item["Anglický jazyk"]+["Matematika"]+["Biologie"]+item["Zeměpis"]+item["Dějepis"]+item["Ekonomika"]+item["Chemie"]+item["Informatika"]+item["Fyzika"]
+  print(item["Jméno"],prumerZnamek)
 
 
