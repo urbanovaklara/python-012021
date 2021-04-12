@@ -6,5 +6,9 @@ import matplotlib.pyplot as plt
 import datetime as dt
 
 velikonoce = pandas.read_csv("velikonoce.csv")
-datumy = dt.strptime(velikonoce["Datum"],"%d.%m.%Y")
-print(datumy)
+ax = velikonoce.plot("Datum", "Počet", kind="bar")
+ax.set_ylabel("Počet dnů")
+ax.set_xlabel("Datum")
+ax.set_title("Kolikrát připadly Velikonoce na konkrétní datum mezi lety 1600 až 2100")
+
+plt.show()
